@@ -7,16 +7,16 @@ const Footer = () => (
   <FooterWrapper id="footer">
     <FooterColumnContainer>
       <FooterColumn>
-        <span>  Libate Wines &copy; 2021</span>
+        <span>  Libate Fine Wines &copy; 2021</span>
       </FooterColumn>
     </FooterColumnContainer>
   </FooterWrapper>
 )
 
 const FooterWrapper = styled.footer`
-  background-color: white;
+  background-color: #f7f7f7;
   margin: 80px 0 0;
-  padding: 0 0 80px;
+  padding: 10px 10px 80px;
 `
 
 const FooterColumnContainer = styled(Container)`

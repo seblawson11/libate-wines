@@ -6,10 +6,7 @@ import Navigation from "../components/common/navigation/navigation"
 
 import Header from "../components/sections/header"
 import Features from "../components/sections/features"
-import WhyWine from "../components/sections/whywine"
-import Process from "../components/sections/process"
 import Footer from "../components/sections/footer"
-import GetStarted from "../components/sections/getstarted"
 
 const IndexPage = () => (
   <Layout>
@@ -17,9 +14,6 @@ const IndexPage = () => (
     <Navigation />
     <Header />
     <Features />
-    <WhyWine />
-    <Process />
-    <GetStarted />
     <Footer />
   </Layout>
 )

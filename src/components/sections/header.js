@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { graphql, useStaticQuery, Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import MailChimpForm from './MailChimpForm'
 
@@ -24,17 +24,16 @@ const Header = () => {
       <Container>
         <Flex>
           <HeaderTextGroup>
-            <Subtitle>Libate Wines</Subtitle>
+            <Subtitle>Libate Fine Wines</Subtitle>
             <h1>
-              Own Wine,
-              Not Stock
+              COMING SOON
             </h1>
             <h2>
-              We are helping to cultivate bespoke Fine Wine collections (correct wording).
+              Making the Fine Wine Market more accessible
             </h2>
             <MailChimpForm />
             <FormSubtitle>
-              Already signed up? Get in touch to start a collection.
+              Interested in investing or have a question? <a href="mailto:libatewines@outlook.com?subject=Investment%20Enquiry">Get in touch. </a>
             </FormSubtitle>
           </HeaderTextGroup>
           <ImageWrapper>
@@ -50,7 +49,7 @@ const Header = () => {
 export default Header
 
 const HeaderWrapper = styled.header`
-  background-color: #f8f8f8;
+  background-color: #f7f7f7;
   padding: 160px 0 80px 0;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));

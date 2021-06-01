@@ -29,7 +29,7 @@ const theme = {
     accent: "#cca86e",
     background: {
       white: "#ffffff",
-      light: "#f8f8f8",
+      light: "#f7f7f7",
     },
     white: {
       regular: "#ffffff",

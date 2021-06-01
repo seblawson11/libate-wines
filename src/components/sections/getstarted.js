@@ -8,24 +8,7 @@ const GetStarted = () => (
     <GetStartedContainer>
       <GetStartedTitle>Got a question?</GetStartedTitle>
       <ContactForm method="post" action="#">
-        <Input>
-          Name
-          <input type="text" name="name" id="name" />
-        </Input>
-        <label>
-          Email
-          <input type="email" name="email" id="email" />
-        </label>
-        <label>
-          Subject
-          <input type="text" name="subject" id="subject" />
-        </label>
-        <label>
-          Message
-          <textarea name="message" id="message" rows="5" />
-        </label>
-        <TryItButton type="submit">Send us a message</TryItButton>
-        <ClearButton type="reset" value="Clear"> Clear </ClearButton>
+        <TryItButton type="submit"><a href="mailto:libatewines@outlook.com?subject=Quick%20Question"> Send Us A Message </a></TryItButton>
       </ContactForm>
     </GetStartedContainer>
   </StyledSection>
@@ -53,6 +36,7 @@ const GetStartedTitle = styled.h3`
 
 const TryItButton = styled.button`
   font-size: 14px;
+  text-decoration: none;
   color: white;
   letter-spacing: 1px;
   height: 60px;
@@ -69,6 +53,10 @@ const TryItButton = styled.button`
   border-color: initial;
   border-image: initial;
   outline: 0px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
   &:hover {
     box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
   }

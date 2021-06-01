@@ -2,24 +2,44 @@ import addToMailchimp from "gatsby-plugin-mailchimp"
 import React from "react"
 import styled from "styled-components"
 
+
 export default class MailChimpForm extends React.Component {
   constructor() {
-    super()
-    this.state = { email: "", result: null }
+    super();
+    this.state = {email: null};
   }
-  _handleSubmit = async e => {
-    e.preventDefault()
-    const result = await addToMailchimp(this.state.email)
-    this.setState({result: result})
-  }
-handleChange = event => {
-    this.setState({ email: event.target.value })
-  }
-render() {
-    return (
 
-      <form onSubmit={this._handleSubmit}>
-        <HeaderForm>
+
+  handleChange = (event) => {
+      this.setState({email: event.target.value});
+  }
+  // Since `addToMailchimp` returns a promise, you
+  // can handle the response in two different ways:
+
+  // Note that you need to send an email & optionally, listFields
+  // these values can be pulled from React state, form fields,
+  // or wherever.  (Personally, I recommend storing in state).
+
+  // 1. via `.then`
+  _handleSubmit = e => {
+    e.preventDefault();
+    addToMailchimp(this.state.email) // listFields are optional if you are only capturing the email address.
+    .then(data => {
+      // I recommend setting data to React state
+      // but you can do whatever you want (including ignoring this `then()` altogether)
+      alert(data.result)
+    })
+    .catch(() => {
+      // unnecessary because Mailchimp only ever
+      // returns a 200 status code
+      // see below for how to handle errors
+    })
+  }
+
+  render () {
+
+    return (
+        <HeaderForm onSubmit={this._handleSubmit}>
           <HeaderInput
             id="outlined-email-input"
             label="Email"
@@ -39,11 +59,10 @@ render() {
             Join Mailing list
           </HeaderButton>
         </HeaderForm>
-      </form>
-
     )
   }
 }
+
 
 const HeaderForm = styled.form`
   display: flex;

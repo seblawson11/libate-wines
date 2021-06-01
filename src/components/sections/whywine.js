@@ -25,7 +25,7 @@ const WhyWine = () => (
           <FeatureItem>
           <FeatureText>
             Wine's consistent return are based on its unique characteristics, namely that it is a finite, quality-improving asset with
-            demand outstripping supply as the wine gets consumed
+            demand outstripping supply as the wine gets consumed during its drinking window
         </FeatureText>
         </FeatureItem>
         <FeatureItem>
@@ -33,7 +33,7 @@ const WhyWine = () => (
           </FeatureItem>
           <FeatureItem>
           <FeatureText>
-          Unlike most assets if things are going well you can choose the option of drinking a portion of your wine! 
+          Unlike most assets if you can always choose the option of taking your wine out of bond and drinking a portion of your wine! On top of that each of the vineyards in your portfolio carry a unique story alongside the complex characteristics of each individual wine. No asset class houses such diversity.
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>

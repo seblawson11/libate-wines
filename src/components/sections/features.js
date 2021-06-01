@@ -16,7 +16,7 @@ const Features = () => (
           <FeatureTitle>Bespoke</FeatureTitle>
           <FaHandshake size={30} />
           <FeatureText>
-          We spend time getting to know you, allowing us to cultivate a collection unique to your preferences and tastes.
+          We spend time getting to know you, allowing us to offer you wines to take out of bond for your own collection along the way.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
@@ -30,7 +30,7 @@ const Features = () => (
           <FeatureTitle>Educate you along the way</FeatureTitle>
           <IoSchoolSharp size={30} />
           <FeatureText>
-          We're passionate about wine, and want to share our knowledge with you. It may seem a complicated to the unitiated, but by becoming a collector with us, we will guide you through the fascinating world of wine.
+          We're passionate about wine, and want to share our knowledge with you. It may seem a little complicated for the unitiated, but we will guide you through the fascinating world of wine.
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>

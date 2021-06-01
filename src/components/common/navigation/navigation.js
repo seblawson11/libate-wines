@@ -15,7 +15,7 @@ import {
   ActionsContainer,
 } from "./style"
 
-const NAV_ITEMS = ["Why Libate", "Why Wine", "Our Process", ""]
+const NAV_ITEMS = [""]
 
 export default class Navigation extends Component {
   state = {
@@ -96,7 +96,7 @@ export default class Navigation extends Component {
 
           <Mobile hide>{this.getNavList({})}</Mobile>
           <ActionsContainer>
-            <button>View StockList</button>
+            <button>view posts</button>
           </ActionsContainer>
         </StyledContainer>
         <Mobile>
