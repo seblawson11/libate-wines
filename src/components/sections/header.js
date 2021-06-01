@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import MailChimpForm from './MailChimpForm'
+import MailChimpForm from './mailchimpForm'
 
 import { Container } from "../global"
 
