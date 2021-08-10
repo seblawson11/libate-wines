@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
+import PDF from "../../../static/PDFS/Q2-2021-Wine-List.pdf"
 
 import { Container } from "../../global"
 import {
@@ -96,7 +97,7 @@ export default class Navigation extends Component {
 
           <Mobile hide>{this.getNavList({})}</Mobile>
           <ActionsContainer>
-            <button>view posts</button>
+            <a href={PDF} download>Wine List</a>
           </ActionsContainer>
         </StyledContainer>
         <Mobile>

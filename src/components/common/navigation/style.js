@@ -92,7 +92,8 @@ export const ActionsContainer = styled.div`
     display: none;
   }
 
-  button {
+  a {
+    text-decoration: none;
     font-family: 'Nunito', sans-serif;
     ${props => props.theme.font_size.xsmall};
     color: white;
