@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
-import PDF from "../../../static/PDFS/Q2-2021-Wine-List.pdf"
+import PDF from "../../../static/PDFS/Q3-2021-Wine-List.pdf"
 
 import { Container } from "../../global"
 import {
