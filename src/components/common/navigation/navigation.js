@@ -3,6 +3,8 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
 import PDF from "../../../static/PDFS/Libate-terms-and-conditions.pdf"
+import { Link } from "gatsby"
+
 
 import { Container } from "../../global"
 import {
@@ -17,6 +19,7 @@ import {
 } from "./style"
 
 const NAV_ITEMS = [""]
+
 
 export default class Navigation extends Component {
   state = {
@@ -78,7 +81,9 @@ export default class Navigation extends Component {
           <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">
               <AnchorLink href="#top" onClick={this.closeMobileMenu}>
+              <Link to="/">
                 LFW
+                </Link>
               </AnchorLink>
             </Scrollspy>
           </Brand>

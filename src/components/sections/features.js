@@ -10,7 +10,7 @@ const Features = () => (
   <Section id="why libate">
     <StyledContainer>
       <Subtitle></Subtitle>
-      <SectionTitle>Why Libate Wines?</SectionTitle>
+      <SectionTitle>What we do</SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
           <FeatureTitle>Bespoke</FeatureTitle>

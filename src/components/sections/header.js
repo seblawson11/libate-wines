@@ -25,15 +25,12 @@ const Header = () => {
         <Flex>
           <HeaderTextGroup>
             <Subtitle>Libate Fine Wines</Subtitle>
-            <h1>
-              COMING SOON
-            </h1>
             <h2>
               Making the Fine Wine Market more accessible
             </h2>
             <MailChimpForm />
             <FormSubtitle>
-              Interested in investing or have a question? <a href="mailto:libatewines@outlook.com?subject=Investment%20Enquiry">Get in touch. </a>
+              Interested in buying or have a question? <a href="mailto:libatewines@outlook.com?subject=Investment%20Enquiry">Get in touch. </a>
             </FormSubtitle>
           </HeaderTextGroup>
           <ImageWrapper>

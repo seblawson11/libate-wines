@@ -7,7 +7,8 @@ const Footer = () => (
   <FooterWrapper id="footer">
     <FooterColumnContainer>
       <FooterColumn>
-        <span>  Libate Fine Wines &copy; 2022</span>
+        <span>  Libate Fine Wines &copy; 2024</span>
+        <span>  libatewines@outlook.com</span>
       </FooterColumn>
     </FooterColumnContainer>
   </FooterWrapper>
