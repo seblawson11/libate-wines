@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import MailChimpForm from './mailchimpForm'
 
 import { Container } from "../global"
 
@@ -28,7 +27,6 @@ const Header = () => {
             <h2>
               Making the Fine Wine Market more accessible
             </h2>
-            <MailChimpForm />
             <FormSubtitle>
               Interested in buying or have a question? <a href="mailto:libatewines@outlook.com?subject=Investment%20Enquiry">Get in touch. </a>
             </FormSubtitle>
